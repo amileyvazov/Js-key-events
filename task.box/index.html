@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class=inps>
+                    <div class="inp">
+                      <input type="number" placeholder="box-witdh" name="" id="">
+                      <button onclick="setBoxWidth(this)">Add</button>
+                    </div>
+                    <div class=inp>
+                      <input type="number" placeholder="box-height" name="" id="">
+                      <button onclick="setBoxHeight(this)">Add</button>
+                    </div>
+                    <div class=inp>
+                      <input type="color" id="borderColor "placeholder="background-color" name="" id="">
+                      <button onclick="setBoxColor(this)">Add</button>
+                    </div>
+                    <div class=inp>
+                      <input type="color"placeholder="box-background-color" name="" id="">
+                      <button onclick="setBorderColor(this)">Add</button>
+                    </div>
+                    <div class=inp>
+                      <input type="number" id="steps" placeholder="box-steps" name="" id="">
+                      <button onclick="setSphereSize(this)">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 ">
+                <div class="box">
+                    <div class="sphere"></div>
+                </div>
+                <div class="control">
+                    <button class="btn btn-1" onclick="moveUp(this)">Up</button>
+                    <button class="btn btn-2" onclick="moveDown(this)">Right</button>
+                    <button class="btn btn-3"onclick="moveLeft(this)">Left</button>
+                    <button class="btn btn-4" onclick="moveRight(this)">Down</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
